@@ -1,8 +1,9 @@
 import { GenerationConfig } from "../types";
 
-const API_KEY = 'd92177724f7088bb23e4caa4b2982285'; // Kie.ai Key
-const IMGBB_API_KEY = '4d72448894522d67def3f74993a95274'; // REPLACE THIS WITH YOUR IMGBB KEY
+const API_KEY = import.meta.env.VITE_KIE_API_KEY;
+const IMGBB_API_KEY = import.meta.env.VITE_IMGBB_API_KEY;
 const BASE_URL = 'https://api.kie.ai/api/v1/jobs';
+
 
 /**
  * Enhances a user prompt locally.
